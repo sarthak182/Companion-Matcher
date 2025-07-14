@@ -1,0 +1,43 @@
+.tab-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tab-buttons {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 6px;
+}
+
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: #333;
+  position: relative;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  background: teal;
+  transition: all 0.3s ease;
+}
+
+.signout-container {
+  margin-left: auto;
+}

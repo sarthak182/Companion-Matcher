@@ -1,0 +1,164 @@
+.candidates-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.candidates-popup-modal {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.candidates-popup-modal h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.candidates-popup-modal p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.candidates-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.candidates-btn-approve,
+.candidates-btn-reject,
+.candidates-btn-cancel {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.candidates-btn-approve {
+  background-color: #4caf50;
+  color: white;
+}
+
+.candidates-btn-approve:hover {
+  background-color: #3e8e41;
+}
+
+.candidates-btn-reject {
+  background-color: #f44336;
+  color: white;
+}
+
+.candidates-btn-reject:hover {
+  background-color: #d32f2f;
+}
+
+.candidates-btn-cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.candidates-btn-cancel:hover {
+  background-color: #d5d5d5;
+}
+/* ===================== */
+/* CANDIDATES TABLE STYLES */
+/* ===================== */
+
+.candidates-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin: 30px 0;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+}
+
+/* Header row */
+.candidates-table thead tr {
+  background-color: #f8f9fb;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* Header cells */
+.candidates-table th {
+  padding: 14px 20px;
+  text-align: center;
+  background-color: #f8f9fb;
+  border-radius: 6px;
+}
+
+/* Body cells */
+.candidates-table td {
+  padding: 14px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* Row hover effect */
+.candidates-table tbody tr:hover td {
+  background-color: #f1fdfc;
+  cursor: pointer;
+}
+
+/* Responsive - optional */
+@media screen and (max-width: 768px) {
+  .candidates-table thead {
+    display: none;
+  }
+
+  .candidates-table, .candidates-table tbody, .candidates-table tr, .candidates-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .candidates-table tr {
+    margin-bottom: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .candidates-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .candidates-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+  }
+}
