@@ -24,3 +24,28 @@ node server.js
 cd frontend
 npm install
 npm start
+
+Additional API Summary
+1) POST /users/submit
+Submit user profile.
+Input:
+{
+  "name": "Alice",
+  "age": 25,
+  "email": "alice@example.com",
+  "interests": ["music", "books"]
+}
+Response:
+{ "message": "User profile submitted successfully" }
+
+2)GET /users/candidates/:email
+Get matching candidates.
+Response:
+[
+  {
+    "name": "Bob",
+    "age": 26,
+    "email": "bob@example.com",
+    "commonInterests": ["music"]
+  }
+]
