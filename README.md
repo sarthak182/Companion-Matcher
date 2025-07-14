@@ -50,3 +50,5 @@ Response:
     "commonInterests": ["music"]
   }
 ]
+### Sample Screenshot
+<img width="1920" height="922" alt="Screenshot (644)" src="https://github.com/user-attachments/assets/5735fb22-970d-438b-a92a-def92bd10c6a" />
