@@ -25,7 +25,8 @@ cd frontend
 npm install
 npm start
 
-Additional API Summary
+```
+### Additional API Summary
 1) POST /users/submit
 Submit user profile.
 Input:
