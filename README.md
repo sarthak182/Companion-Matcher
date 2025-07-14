@@ -27,7 +27,7 @@ npm start
 
 ```
 ### Additional API Summary
-1) POST /users/submit
+### 1) POST /users/submit
 Submit user profile.
 Input:
 {
@@ -39,7 +39,7 @@ Input:
 Response:
 { "message": "User profile submitted successfully" }
 
-2)GET /users/candidates/:email
+### 2)GET /users/candidates/:email
 Get matching candidates.
 Response:
 [
