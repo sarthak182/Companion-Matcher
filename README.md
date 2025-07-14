@@ -50,5 +50,12 @@ Response:
     "commonInterests": ["music"]
   }
 ]
-### Sample Screenshot
-<img width="1920" height="922" alt="Screenshot (644)" src="https://github.com/user-attachments/assets/5735fb22-970d-438b-a92a-def92bd10c6a" />
+### Sample Screenshots
+### Creating a user
+<img width="1920" height="935" alt="Screenshot (640)" src="https://github.com/user-attachments/assets/a2ac38de-4197-4962-bb5c-c90502b25d94" />
+
+### Showing similar candidates
+<img width="1920" height="922" alt="Screenshot (644)" src="https://github.com/user-attachments/assets/99ae1fb4-4999-4403-9d06-514f8e7151e2" />
+
+### Note:
+Kindly refer to the screenshots folder in the repository to view additional images of the working application.
